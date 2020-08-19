@@ -19,5 +19,18 @@ namespace UnitTestSumar
             //Assert
             Assert.AreEqual(esperado, resultado);
         }
+        [TestMethod]
+        public void TestProducto()
+        {
+            //Arrange
+            SumaController sumaController = new SumaController();
+            int a = 5;
+            int b = 8;
+            int esperado = 40;
+            //Act
+            int resultado = sumaController.Product(a, b);
+            //Assert
+            Assert.AreEqual(esperado, resultado);
+        }
     }
 }
